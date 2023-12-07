@@ -54,11 +54,11 @@ print(dir(sehirler))
     
 # print(en_uzun)
 
-e = ''
+# e = ''
 
-for i in sehirler:
-    if e.count('e') > i.count('e'):
-        e = i
+# for i in sehirler:
+#     if e.count('e') > i.count('e'):
+#         e = i
 
-print(e)
+# print(e)
 
