@@ -139,23 +139,23 @@
 
 #! dizi içindeki tekrarları al ve topla 
 
-def repeat_sum(l):
-    birlesim = []
-    tekrarlar = []
+# def repeat_sum(l):
+#     birlesim = []
+#     tekrarlar = []
 
-    for i in l:
-        for x in set(i):
-            if x not in birlesim:
-                birlesim.append(x)
-            else:
-                if x not in tekrarlar:
-                    tekrarlar.append(x)
-    print(tekrarlar)
-    return sum(tekrarlar)
+#     for i in l:
+#         for x in set(i):
+#             if x not in birlesim:
+#                 birlesim.append(x)
+#             else:
+#                 if x not in tekrarlar:
+#                     tekrarlar.append(x)
+#     print(tekrarlar)
+#     return sum(tekrarlar)
 
 
-print(
-repeat_sum([(1,2,3),(2,8,9),(7,123,8)])
-)
+# print(
+# repeat_sum([(1,2,3),(2,8,9),(7,123,8)])
+# )
 
 
