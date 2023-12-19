@@ -7,22 +7,23 @@
 
 <div class="w3-padding-large" id="main">
   <div class="row">
-    {% for proje in projelers %}
+    {% for proje in projelerim %}
 
     <div class="col-lg-4 col-md-6 col-12">
       <div class="card mt-5">
         <div class="card-body">
-            <a href="{{proje.slug}}">
-          <p class="h3">{{proje.ad}}</p>
+          <p class="h3">{{proje.name}}</p>
           <img
-            src="{{proje.resim}}
+            src="{{proje.img}}
                 "
             class="w-100"
             alt=""
           />
-          <p>{{proje.aciklama}}</p>
+          <a href="{{proje.slug}}">
+            <p>{{proje.description}}</p>
+          </a>
+          <p>{{proje.category}}</p>
         </div>
-    </a>
       </div>
     </div>
     {% endfor %}

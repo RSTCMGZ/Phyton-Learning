@@ -22,5 +22,6 @@ urlpatterns = [
     path('',index,name='indexPage'),
     path('projeler/',projeler,name='projelerPage'),
     path('projeler/<str:detay_slug>',proje_detay,name='detayPage'),
+    path('kategori/<str:category_slug>',name='categoryPage'),
     path('admin/', admin.site.urls),
 ]
