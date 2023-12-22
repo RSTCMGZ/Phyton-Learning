@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+
+{% block css %}
+    <style>
+        .w3-row-padding{
+            margin-top:70px;
+        }
+    </style>
+{% endblock css %}
+{% block title %}{{kisi.name}}{% endblock title %}
+
+{% block content %}
+    {% include "partials/_navbar.html" %}
+
+    <div class="w3-row-padding w3-grayscale">
+
+         
+        <div class="w3-col l3 m6 w3-margin-bottom">
+        <img src="{{kisi.image.url}}" alt="John" style="width:100%">
+        <h3>{{kisi.name}}</h3>
+        <p class="w3-opacity">{{kisi.position}}</p>
+        <p>{{kisi.description}}</p>
+        </div>
+       
+       
+      
+      </div>
+        {% for ev in evler  %}
+        <div class="w3-row-padding w3-grayscale">
+            <div class="w3-col l3 m6 w3-margin-bottom">
+                <div class="w3-display-container">
+                <a href="{% url "detail_house" ev.slug %}">
+                    <div class="w3-display-topleft w3-black w3-padding">{{ev.title}}</div>
+                </a>
+                <img src="{{ev.image.url}}" alt="House" style="width:100%">
+                </div>
+            </div>
+        </div>
+        {% endfor %}
+
+
+
+    {% include "partials/_footer.html" %}
+{% endblock content %}
+
